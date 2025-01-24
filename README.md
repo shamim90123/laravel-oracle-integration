@@ -10,8 +10,8 @@ Yajra\Oci8\Oci8ServiceProvider::class,
     DB_CONNECTION=oracle
     DB_HOST=127.0.0.1
     DB_PORT=1521
-    DB_DATABASE=dev_moc_rjsc_service
-    DB_USERNAME=dev_moc_rjsc_service
+    DB_DATABASE=db_name
+    DB_USERNAME=username
     DB_PASSWORD='xyz'
 
 # in config/database
@@ -21,9 +21,9 @@ Yajra\Oci8\Oci8ServiceProvider::class,
         'tns'       => env('DB_TNS', '(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521))(CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = orcl)))'),
         'host'      => env('DB_HOST', 'localhost'),
         'port'      => env('DB_PORT', '1521'),
-        'database'  => env('DB_DATABASE', 'dev_moc_rjsc_service'),
-        'username'  => env('DB_USERNAME', 'dev_moc_rjsc_service'),
-        'password'  => env('DB_PASSWORD', 'SynTech#1627'),
+        'database'  => env('DB_DATABASE', 'db_name'),
+        'username'  => env('DB_USERNAME', 'username'),
+        'password'  => env('DB_PASSWORD', 'xyz'),
         'charset'   => env('DB_CHARSET', 'AL32UTF8'),
         'prefix'    => env('DB_PREFIX', ''),
         'prefix_schema' => env('DB_SCHEMA_PREFIX', ''),
